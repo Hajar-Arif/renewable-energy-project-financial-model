@@ -1,4 +1,4 @@
-![Renewable Energy Project Financial Model](Solar PV project banner.png)
+![Renewable Energy Project Financial Model](Solar_PV_project_banner.png)
 # Renewable Energy Project Financial Model
 
 ## Disclaimer
