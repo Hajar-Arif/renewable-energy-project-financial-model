@@ -5,70 +5,65 @@
 This project is a **personal portfolio case study** developed for educational and analytical purposes. It represents a simplified financial model based on publicly available data and modelling assumptions and should not be considered investment advice or a bankable project-finance model.
 
 ## Project Overview
-This project assesses the financial viability of a hypothetical **100 MW utility-scale solar PV project in France**.
-The objective is to build an end-to-end financial model connecting technical and market assumptions to investment decision-making.
-The model covers electricity production, revenues, operating costs, taxation, financing, cash flows and project valuation over a **25-year operating period**.
-
-## Business Question: **Is the proposed solar PV project financially attractive under the chosen assumptions?**
+This project evaluates the financial viability of a hypothetical 100 MWp utility-scale solar PV project in France over a 25-year operating period.
+The objective was to build an end-to-end financial model translating technical and commercial assumptions into investment returns and a decision-oriented investment recommendation.
 
 ## Model Structure
-The Excel model includes:
+The Excel model covers:
 - Project and financial assumptions
-- Electricity production and degradation
-- Revenue modelling under a PPA
-- Operating expenditure (OPEX)
-- Depreciation and taxation
+- Electricity production modelling
+- PPA-based revenue forecast
+- Operating costs and EBITDA
+- Depreciation schedule
 - Debt financing schedule
 - Unlevered Free Cash Flow (UFCF)
-- Discounted Cash Flow (DCF) valuation
-- NPV and IRR
-- ROI and profitability index
-- Simple and discounted payback periods
+- DCF valuation
+- NPV, IRR, ROI and payback analysis
+- Sensitivity analysis
 
-## Key Assumptions
-| Assumption | Base Case |
+## Base-Case Assumptions
+
+| Parameter | Base Case |
 |---|---:|
 | Installed Capacity | 100 MWp |
-| Operating Period | 25 years |
+| Project Lifetime | 25 years |
+| CAPEX | €85M |
 | Capacity Factor | 14.1% |
+| PPA Price | €59/MWh |
 | Annual Degradation | 0.5% |
 | System Losses | 14% |
-| Initial CAPEX | €85M |
-| Initial PPA Price | €59/MWh |
+| WACC | 3.27% |
 | Corporate Tax Rate | 25% |
-| Debt / Equity | 75% / 25% |
-| Cost of Debt | 2.25% |
-| Cost of Equity | 8.0% |
-| WACC / Discount Rate | 3.27% |
 
 ## Investment Results
+
 | KPI | Result |
 |---|---:|
-| NPV | **€6.73M** |
-| IRR | **3.94%** |
-| ROI | **62.65%** |
-| Profitability Index | **1.08x** |
-| Simple Payback Period | **17 years** |
-| Discounted Payback Period | **23 years** |
+| NPV | €6.73M |
+| IRR | 3.94% |
+| WACC | 3.27% |
+| ROI | 62.65% |
+| Simple Payback Period | 17 years |
+| Discounted Payback Period | 23 years |
+| Profitability Index | 1.08 |
 
-## Investment Assessment
-Under the base-case assumptions, the project generates a **positive NPV of €6.73M** and an **IRR of 3.94%, above the 3.27% WACC**.
-The project therefore creates value under the selected assumptions. However, the relatively limited spread between IRR and WACC and the long discounted payback period indicate that the investment case may be sensitive to changes in key assumptions.
-The next step of the analysis is therefore to assess the sensitivity of project returns to **CAPEX, PPA electricity price and capacity factor**.
+The base case creates positive value, with NPV above zero and IRR exceeding the project's required return. However, the relatively narrow IRR–WACC spread and long discounted payback indicate limited downside protection.
 
-## Methodology
-The project follows the financial modelling chain:
-**Technical & Market Assumptions → Production → Revenue & OPEX → EBITDA → EBIT → NOPAT → UFCF → DCF → NPV & IRR → Investment Decision**
-Unlevered Free Cash Flow is used to assess the economics of the project independently of its financing structure, with the WACC used as the project discount rate.
+## Sensitivity Analysis
+The model tests the impact of changes in:
+- PPA price
+- CAPEX
+- Capacity factor
 
-## Data Sources
-Key assumptions were derived from publicly available sources, including:
-- RTE 
-- Solar Data Atlas 
-- French Tax Administration
-- Industry sources
-  (Detailed source references and links are documented in the Excel model)
+![NPV Sensitivity Analysis](images/npv-sensitivity.png)
 
-## Tools
-- **Microsoft Excel** — financial modelling, cash-flow modelling and investment analysis
-- **GitHub** — project documentation and portfolio
+The analysis shows that project value is particularly sensitive to revenue assumptions. A 10% decrease in either PPA price or capacity factor turns NPV negative.
+PPA price and capacity factor sensitivities overlap in this simplified model because both have an equivalent proportional impact on revenue.
+
+## Investment Recommendation
+
+**Proceed with caution.**
+The project is financially viable under the base-case assumptions. However, its limited margin of safety means that investment attractiveness depends strongly on securing PPA pricing, production performance and CAPEX close to the base case.
+
+## Tools & Skills Demonstrated
+**Excel Financial Modelling · DCF · NPV · IRR · WACC · Project Finance · Sensitivity Analysis · Investment Analysis · Renewable Energy**
