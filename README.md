@@ -55,6 +55,8 @@ The model tests the impact of changes in:
 - CAPEX
 - Capacity factor
 
+![Renewable Energy Project Financial Model](NPV sensitivity chart.png)
+
 The analysis shows that project value is particularly sensitive to revenue assumptions. A 10% decrease in either PPA price or capacity factor turns NPV negative.
 PPA price and capacity factor sensitivities overlap in this simplified model because both have an equivalent proportional impact on revenue.
 
